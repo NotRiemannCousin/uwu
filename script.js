@@ -28,6 +28,9 @@ function botaoPorLetra(){ //Botão por letra
     document.getElementById('animes').innerHTML = ("Animes")
     document.getElementById('movies').innerHTML = ("")
     document.getElementById('filmes').innerHTML = ("Filmes")
+    document.getElementById('2').innerHTML = ("<button onclick='botaoTodos()' id='todos'>Todos</button>")
+    document.getElementById('3').innerHTML = ("<button onclick='botaoAnimes()' id='animes'>Animes</button>")
+    document.getElementById('4').innerHTML = ("<button onclick='botaoFilmes()' id='filmes'>Filmes</button>")
 
     document.getElementById('botoes').innerHTML = ("<button onclick='letraa()' id='na'></button><button onclick='letrab()' id='nb'></button><button onclick='letrac()' id='nc'></button><button onclick='letrad()' id='nd'></button><button onclick='letrae()' id='ne'></button><button onclick='letraf()' id='nf'></button><button onclick='letrag()' id='ng'></button><button onclick='letrah()' id='nh'></button><button onclick='letrai()' id='ni'></button><button onclick='letraj()' id='nj'></button><button onclick='letrak()' id='nk'></button><button onclick='letral()' id='nl' class='noexist'></button><button onclick='letram()' id='nm'></button><button onclick='letran()' id='nn'></button><button onclick='letrao()' id='no'></button><button onclick='letrap()' id='np'></button><button onclick='letraq()' id='nq' class='noexist'></button><button onclick='letrar()' id='nr' class='noexist'></button><button onclick='letras()' id='ns'></button><button onclick='letrat()' id='nt'></button><button onclick='letrau()' id='nu' class='noexist'></button><button onclick='letrav()' id='nv'></button><button onclick='letraw()' id='nw'></button><button onclick='letrax()' id='nx' class='noexist'></button><button onclick='letray()' id='ny'></button><button onclick='letraz()' id='nz'></button>"); //Quando o botão "por letra" é selecionado, aparece botões, um com cada letra
     document.getElementById('letra').innerHTML = ("")
@@ -173,6 +176,9 @@ function botaoTodos(){ //Botão todos
     document.getElementById('animes').innerHTML = ("Animes")
     document.getElementById('movies').innerHTML = ("")
     document.getElementById('filmes').innerHTML = ("Filmes")
+    document.getElementById('1').innerHTML = ("<button onclick='botaoPorLetra()'>Por Letra</button>")
+    document.getElementById('3').innerHTML = ("<button onclick='botaoAnimes()' id='animes'>Animes</button>")
+    document.getElementById('4').innerHTML = ("<button onclick='botaoFilmes()' id='filmes'>Filmes</button>")
 
     document.getElementById('todos').innerHTML = (`Todos (${total1})`) //Quando clicado, exibe sua quant.
     document.getElementById('todosanimes').innerHTML = (`${total}`); //e todos os animes
@@ -188,6 +194,9 @@ function botaoAnimes(){ //Botão animes
     document.getElementById('animes').innerHTML = ("Animes")
     document.getElementById('movies').innerHTML = ("")
     document.getElementById('filmes').innerHTML = ("Filmes")
+    document.getElementById('1').innerHTML = ("<button onclick='botaoPorLetra()'>Por Letra</button>")
+    document.getElementById('2').innerHTML = ("<button onclick='botaoTodos()' id='todos'>Todos</button>")
+    document.getElementById('4').innerHTML = ("<button onclick='botaoFilmes()' id='filmes'>Filmes</button>")
 
     document.getElementById('animes').innerHTML = (`Animes (${animes1})`) //Quando clicado, exibe sua quant.
     document.getElementById('osanimes').innerHTML = (`${animes}`); //e os animes
@@ -203,6 +212,9 @@ function botaoFilmes(){ //Botão animes
     document.getElementById('animes').innerHTML = ("Animes")
     document.getElementById('movies').innerHTML = ("")
     document.getElementById('filmes').innerHTML = ("Filmes")
+    document.getElementById('1').innerHTML = ("<button onclick='botaoPorLetra()'>Por Letra</button>")
+    document.getElementById('2').innerHTML = ("<button onclick='botaoTodos()' id='todos'>Todos</button>")
+    document.getElementById('3').innerHTML = ("<button onclick='botaoAnimes()' id='animes'>Animes</button>")
 
     document.getElementById('filmes').innerHTML = (`Filmes (${filmes1})`) //Quando clicado, exibe sua quant.
     document.getElementById('movies').innerHTML = (`${filmes}`); //e os filmes
