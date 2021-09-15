@@ -1,6 +1,6 @@
 
 function themeButton(){
-if(document.getElementByTagName('link').href == './light.css'){
+if(document.getElementById('corT').innerHTML === 'Dark'){
     document.getElementByTagName('link').href = './dark.css';
     document.getElementById('corT').innerHTML = 'Light';
   }else{
