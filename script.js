@@ -1,3 +1,8 @@
 var theme = getElementsByTagName('link');
 
-theme.
+Function ThemeButton (){
+if(theme.href == './light.css'){
+  theme.href = './dark.css'
+  theme.innerHTML = 'Dark'
+  }
+}
