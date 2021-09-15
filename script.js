@@ -1,7 +1,7 @@
 
 function themeButton(){
-///if(theme.href == './light.css'){
-///  theme.href = './dark.css';
+if(document.getElementByTagName('link').href == './light.css'){
+  document.getElementByTagName('link').href = './dark.css';
   document.getElementById('corT').innerHTML = 'Light';
-///  }
+  }
 }
