@@ -1,2 +1,2 @@
 # uwu
-forked from <a href='github.com/abokadowell/uwu' >abokadowell</a>
+forked from <a href='github.com/AbokadoWell/uwu' >abokadowell</a>
