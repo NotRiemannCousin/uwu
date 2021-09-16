@@ -27,7 +27,7 @@ ul { /*Listas (os resultados)*/
     height: 59px;
     width: 150px;
     padding: 1%;
-    transition-duration: 0.3s;
+    transition-duration: 0.1s;
     border-radius: 15%;
 }
 .botoes button { /*Style dos botões das letras*/
