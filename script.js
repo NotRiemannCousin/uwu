@@ -1,5 +1,3 @@
-document.getElementById('link').href = './dark.css';
-
 function themeButton(){
 if(document.getElementById('corT').innerHTML == 'Dark'){
     document.getElementById('link').href = './dark.css';
