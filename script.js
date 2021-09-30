@@ -1,3 +1,10 @@
+const list;
+fetch("list.json")
+      .then((response) => {
+           return response.json();
+      }).then(js => {
+           list = js;
+      });
 function themeButton(){
 if(document.getElementById('corT').innerHTML == 'Dark'){
     document.getElementById('link').href = './dark.css';
