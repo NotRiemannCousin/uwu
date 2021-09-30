@@ -4,6 +4,7 @@ fetch("list.json")
            return response.json();
       }).then(js => {
            list = js;
+           document.getElementById('todosanimes').innerHTML = js;
       });
 function themeButton(){
 if(document.getElementById('corT').innerHTML == 'Dark'){
