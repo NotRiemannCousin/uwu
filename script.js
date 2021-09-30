@@ -5,13 +5,10 @@ fetch("list.json")
       }).then(js => {
            list = js;
            document.getElementById('todosanimes').innerHTML = js;
-      });
-function themeButton(){
-if(document.getElementById('corT').innerHTML == 'Dark'){
-    document.getElementById('link').href = './dark.css';
-    document.getElementById('corT').innerHTML = 'Light';
-  }else{
-    document.getElementById('link').href = './light.css';
-    document.getElementById('corT').innerHTML = 'Dark';
-  }
+      })
+function dark (){ //Botão cor tema
+    document.getElementById('cor').innerHTML = ("<link rel='stylesheet' type='text/css' href='dark.css'/><button onclick='light()'>Light</button>")
+}
+function light (){
+    document.getElementById('cor').innerHTML = ("<link rel='stylesheet' type='text/css' href='light.css'/><button onclick='dark()'>Dark</button>")
 }
