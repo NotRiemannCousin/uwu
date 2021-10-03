@@ -40,7 +40,7 @@ fetch('list.json')
   });});
 
 function showHide(obj){
-  document.getElementById('botoes').hidden =true;
+  document.getElementById('botoes').hidden = true;
   document.getElementById('todosanimes').hidden = true;
   document.getElementById('osanimes').hidden = true;
   document.getElementById('movies').hidden = true;
