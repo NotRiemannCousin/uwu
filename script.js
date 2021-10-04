@@ -23,7 +23,7 @@ function readArray(array, compar, atribute){
 
 var list;
 
-fetch('https://raw.githubusercontent.com/MarceloH1122/uwu/main/list.json')
+fetch('list.json')
   .then(response => {
   return response.json().then(js => {
     list = js;
