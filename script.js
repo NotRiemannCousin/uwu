@@ -12,13 +12,13 @@ function readArray(array, compar, atribute){
     if(Object.keys(array[0])[t] == atribute){
       array.map(element=>{
         if(Object.values(element)[t] == compar){
-          string.push(element.name + ' \n');
+          string.push(element.name);
         }
       });
    break;
     }
  }
- return string;
+ return string.join('<hr>');
 }
 
 var list;
@@ -27,7 +27,7 @@ fetch('list.json')
   .then(response => {
   return response.json().then(js => {
     list = js;
-    document.getElementById('todosanimes').innerHTML = list.map(x => {return x.name + ' \n';}                                                             );
+    document.getElementById('todosanimes').innerHTML = list.map(x => {return x.name + ' \n';} ).join('<hr>');                                                            );
     document.getElementById('osanimes').innerHTML = readArray(list, 'anime', 'type');
     document.getElementById('movies').innerHTML = readArray(list, 'movie', 'type');
 
