@@ -48,9 +48,9 @@ function showHide(obj){
   document.getElementById(obj).hidden = false;
 }
 
-function Dark (){ //Botão cor tema
+function dark (){ //Botão cor tema
     document.getElementById('cor').innerHTML = ("<link rel='stylesheet' type='text/css' href='dark.css'/><button onclick='Light()'>Light</button>");
 }
-function Light (){
+function light (){
     document.getElementById('cor').innerHTML = ("<link rel='stylesheet' type='text/css' href='light.css'/><button onclick='Dark()'>Dark</button>");
 }
