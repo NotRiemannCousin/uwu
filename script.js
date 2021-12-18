@@ -27,7 +27,7 @@ fetch('https://raw.githubusercontent.com/MarceloH1122/uwu/main/list.json')
   .then(response => {
   return response.json().then(list => {
     
-    //letters(list);
+    letters(list);
     
     document.getElementById('todosanimes').innerHTML = list.map(x => {
       return x.name + ' \n';}).join("<hr>");
