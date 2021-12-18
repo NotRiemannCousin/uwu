@@ -34,7 +34,7 @@ function letters(array){
 
       document.getElementById('letras').appendChild(b);
     }else{
-    index.setAttribute('data-names', index.getAttribute('data-names') + '<hr>' + element.name;
+    index.setAttribute('data-names', index.getAttribute('data-names') + '<hr>' + element.name);
     }
   });
 }
