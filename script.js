@@ -14,8 +14,7 @@ function readArray(array, compar, atribute){
         if(Object.values(element)[t] == compar){
           string.push(element.name);
         }
-      }
-               );
+      });
       break;
     }
   }
