@@ -36,10 +36,10 @@ fetch('https://raw.githubusercontent.com/MarceloH1122/uwu/main/list.json')
     document.getElementById('movies').innerHTML = readArray(list, 'movie', 'type');
 
 
-  document.getElementById('letras').hidden = false;
-  document.getElementById('todosanimes').hidden = false;           
-  document.getElementById('osanimes').hidden = false;
-  document.getElementById('movies').hidden = false;
+  document.getElementById('letras').hidden = true;
+  document.getElementById('todosanimes').hidden = true;           
+  document.getElementById('osanimes').hidden = true;
+  document.getElementById('movies').hidden = true;
   });});
 
 function showHide(obj){
