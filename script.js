@@ -30,8 +30,11 @@ function letters(array){
       b.setAttribute('data-names', element.name);
       b.setAttribute('id', element.name[0]);
       b.innerHTML = element.name[0];
-      
+      b.className = 'botoes';
+
       document.getElementById('letras').appendChild(b);
+    }else{
+    index.setAttribute('data-names', index.getAttribute('data-names') + '<hr>' + element.name;
     }
   });
 }
