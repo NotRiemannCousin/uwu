@@ -30,7 +30,7 @@ ul { /*Listas (os resultados)*/
     transition-duration: 0.1s;
     border-radius: 15%;
 }
-.botoes button { /*Style dos botões das letras*/
+.letras button { /*Style dos botões das letras*/
     color: #f3f3f3;
     background-color: #252525;
     border: 2px solid #ffffff;
@@ -38,7 +38,7 @@ ul { /*Listas (os resultados)*/
     font-size: 14pt;
     height: 45px;
     width: 90px;
-    transition-duration: 0.3s;
+    transition-duration: 0.1s;
     border-radius: 15%;
 }
 .pai button:hover, .botoes button:hover, .cor button:hover { /*Hover de todos os botões (principais, letras e cor tema)*/
