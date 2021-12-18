@@ -28,7 +28,7 @@ function letters(array){
       let b = document.createElement('BUTTON');
       
       b.setAttribute('data-names', element.name);
-      b.setId = element.name[0];
+      b.setAttribute('id', element.name[0]);
       b.innerHTML = element.name[0];
       
       document.getElementById('letras').appendChild(b);
