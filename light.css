@@ -30,7 +30,7 @@ ul { /*Listas (os resultados)*/
     transition-duration: 0.1s;
     border-radius: 15%;
 }
-.botoes button { /*Style dos botões das letras*/
+.letras button { /*Style dos botões das letras*/
     color: #666666;
     background-color: #ffffff;
     border: 2px solid #666666;
