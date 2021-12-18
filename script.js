@@ -40,8 +40,10 @@ function letters(array){
 var list;
 fetch('https://raw.githubusercontent.com/MarceloH1122/uwu/main/list.json')
   .then(response => {
-  return response.json().then(js => {
-    list = js;
+  return response.json().then(list => {
+    
+    letters(list);
+    
     document.getElementById('todosanimes').innerHTML = list.map(x => {
       return x.name + ' \n';}).join("<hr>");
     
