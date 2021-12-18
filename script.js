@@ -21,6 +21,22 @@ function readArray(array, compar, atribute){
   }
   return string.join("<hr>");
 }
+
+function letters(array){
+  array.map(element => {
+  var index = document.getElementById(element.name[0]);
+    if(!index){
+      let b = document.createElement('BUTTON');
+      
+      b.setAttribute('data-names', element.name);
+      b.setId = element.name[0];
+      b.innerHTML = element.name[0];
+      
+      document.getElementById('letras').appendChild(b);
+    }
+  });
+}
+
 var list;
 fetch('https://raw.githubusercontent.com/MarceloH1122/uwu/main/list.json')
   .then(response => {
