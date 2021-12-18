@@ -30,7 +30,7 @@ function letters(array){
       b.setAttribute('data-names', element.name);
       b.setAttribute('id', element.name[0]);
       b.innerHTML = element.name[0];
-      b.className = 'botoes';
+      b.classList.add('botoes');
 
       document.getElementById('letras').appendChild(b);
     }else{
