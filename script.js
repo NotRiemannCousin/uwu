@@ -39,7 +39,9 @@ function letters(array){
         document.getElementById('letters-result').innerHTML = btn.getAttribute('data-names');
        };
 
-      document.getElementById('letters').appendChild(btn);
+      if(document.getElementById('letters').appendChild(btn)){
+      console.log("botão " + element.name[0] + " adicionado");
+      }
     }else{
     btn.setAttribute('amount', parseInt(btn.getAttribute('amount')) + 1);
     btn.innerHTML = element.name[0] + ' (' + btn.getAttribute('amount') + ')';
