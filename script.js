@@ -32,8 +32,11 @@ function letters(array){
       btn.setAttribute('amount', 1);
       btn.innerHTML = element.name[0] + ' (1)';
       btn.classList.add('letter-class');
+      btn.addEventListener('click', function(){
+        document.getElementById('letters-result').innerHTML = btn.getAttribute('data-names');
+       });
 
-      document.getElementById('letras').appendChild(btn);
+      document.getElementById('letters').appendChild(btn);
     }else{
     btn.setAttribute('amount', parseInt(btn.getAttribute('amount')) + 1);
     btn.innerHTML = element.name[0] + ' (' + btn.getAttribute('amount') + ')';
@@ -56,14 +59,14 @@ fetch('https://raw.githubusercontent.com/MarceloH1122/uwu/main/list.json')
     document.getElementById('movies').innerHTML = readArray(list, 'movie', 'type');
 
 
-  document.getElementById('letras').hidden = true;
+  document.getElementById('by-letters').hidden = true;
   document.getElementById('todosanimes').hidden = true;           
   document.getElementById('osanimes').hidden = true;
   document.getElementById('movies').hidden = true;
   });});
 
 function showHide(obj){
-  document.getElementById('letras').hidden = true;
+  document.getElementById('by-letters').hidden = true;
   document.getElementById('todosanimes').hidden = true;
   document.getElementById('osanimes').hidden = true;
   document.getElementById('movies').hidden = true;
