@@ -32,9 +32,9 @@ function letters(array){
       btn.setAttribute('amount', 1);
       btn.innerHTML = element.name[0] + ' (1)';
       btn.classList.add('letter-class');
-      btn.addEventListener('click', function(){
+      btn.onclick = function(){
         document.getElementById('letters-result').innerHTML = btn.getAttribute('data-names');
-       });
+       };
 
       document.getElementById('letters').appendChild(btn);
     }else{
@@ -71,7 +71,7 @@ function showHide(obj){
   document.getElementById('osanimes').hidden = true;
   document.getElementById('movies').hidden = true;
 
-  document.getElementById(obj).hidden = false;
+  obj.hidden = false;
 }
 
 function dark (){ //Botão cor tema
