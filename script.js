@@ -23,18 +23,21 @@ function readArray(array, compar, atribute){
 
 function letters(array){
   array.map(element => {
-  var index = document.getElementById(element.name[0]);
+  var btn = document.getElementById(element.name[0]);
     if(!index){
-      let b = document.createElement('BUTTON');
+      let btn = document.createElement('BUTTON');
       
-      b.setAttribute('data-names', element.name);
-      b.setAttribute('id', element.name[0]);
-      b.innerHTML = element.name[0];
-      b.classList.add('letter-class');
+      btn.setAttribute('data-names', element.name);
+      btn.setAttribute('id', element.name[0]);
+      btn.setAtrribute('amount', 1);
+      btn.innerHTML = element.name[0] + ' (1)';
+      btn.classList.add('letter-class');
 
-      document.getElementById('letras').appendChild(b);
+      document.getElementById('letras').appendChild(btn);
     }else{
-    index.setAttribute('data-names', index.getAttribute('data-names') + '<hr>' + element.name);
+    btn.setAtrribute('amount', btn.getAttribute('amount') + 1);
+    btn.innerHTML = element.name[0] + ' (' + btn.getAttribute('amount') + ')';
+    btn.setAttribute('data-names', btn.getAttribute('data-names') + '<hr>' + element.name);
     }
   });
 }
