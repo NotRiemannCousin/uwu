@@ -35,7 +35,7 @@ function letters(array){
 
       document.getElementById('letras').appendChild(btn);
     }else{
-    btn.setAttribute('amount', btn.getAttribute('amount') + 1);
+    btn.setAttribute('amount', parseInt(btn.getAttribute('amount')) + 1);
     btn.innerHTML = element.name[0] + ' (' + btn.getAttribute('amount') + ')';
     btn.setAttribute('data-names', btn.getAttribute('data-names') + '<hr>' + element.name);
     }
