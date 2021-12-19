@@ -37,8 +37,6 @@ function letters(array){
     index.setAttribute('data-names', index.getAttribute('data-names') + '<hr>' + element.name);
     }
   });
-  link = document.getElementById('link');
-  Link.href = link.href;
 }
 
 var list;
