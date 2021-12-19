@@ -72,13 +72,13 @@ fetch('https://raw.githubusercontent.com/MarceloH1122/uwu/main/list.json')
   document.getElementById('movies').hidden = true;
   });});
 
-function showHide(obj){
+function showHide(id){
   document.getElementById('by-letters').hidden = true;
   document.getElementById('todosanimes').hidden = true;
   document.getElementById('osanimes').hidden = true;
   document.getElementById('movies').hidden = true;
 
-  obj.hidden = false;
+  document.getElementById(id).hidden = false;
 }
 
 function dark (){ //Botão cor tema
