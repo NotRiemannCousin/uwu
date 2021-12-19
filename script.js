@@ -24,7 +24,7 @@ function readArray(array, compar, atribute){
 function letters(array){
   array.map(element => {
   var btn = document.getElementById(element.name[0]);
-    if(!index){
+    if(!btn){
       let btn = document.createElement('BUTTON');
       
       btn.setAttribute('data-names', element.name);
