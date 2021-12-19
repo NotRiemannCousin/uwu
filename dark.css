@@ -30,7 +30,7 @@ ul { /*Listas (os resultados)*/
     transition-duration: 0.1s;
     border-radius: 15%;
 }
-.letras button { /*Style dos botões das letras*/
+.letras { /*Style dos botões das letras*/
     color: #f3f3f3;
     background-color: #252525;
     border: 2px solid #ffffff;
@@ -41,7 +41,7 @@ ul { /*Listas (os resultados)*/
     transition-duration: 0.1s;
     border-radius: 15%;
 }
-.pai button:hover, .botoes button:hover, .cor button:hover { /*Hover de todos os botões (principais, letras e cor tema)*/
+.pai button:hover, .letter-class button:hover, .cor button:hover { /*Hover de todos os botões (principais, letras e cor tema)*/
     background-color: #ffffff;
     color: #252525;
 }
