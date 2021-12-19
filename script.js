@@ -29,13 +29,13 @@ function letters(array){
       
       btn.setAttribute('data-names', element.name);
       btn.setAttribute('id', element.name[0]);
-      btn.setAtrribute('amount', 1);
+      btn.setAttribute('amount', 1);
       btn.innerHTML = element.name[0] + ' (1)';
       btn.classList.add('letter-class');
 
       document.getElementById('letras').appendChild(btn);
     }else{
-    btn.setAtrribute('amount', btn.getAttribute('amount') + 1);
+    btn.setAttribute('amount', btn.getAttribute('amount') + 1);
     btn.innerHTML = element.name[0] + ' (' + btn.getAttribute('amount') + ')';
     btn.setAttribute('data-names', btn.getAttribute('data-names') + '<hr>' + element.name);
     }
