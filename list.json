@@ -1,9 +1,11 @@
 [
   
-  {"name":"Toradora","eps":26,"status":"seen","type":"anime"},
-  {"name":"Fate/Zero","eps":12,"status":"unseen","type":"anime"},
+  {"name":"A Silent Voice","eps":1,"status":"seen","type":"movie"},
+  {"name":"Dr. Stone","eps":24,"status":"seen","type":"anime"},
   {"name":"Dr. Stone Season 2","eps":12,"status":"seen","type":"anime"},
+  {"name":"Fate/Zero","eps":12,"status":"seen","type":"anime"},
+  {"name":"The Promise Neverland","eps":12,"status":"seen","type":"anime"},
   {"name":"The Sword of the Stranger","eps":1,"status":"seen","type":"movie"},
-  {"name":"A Silent Voice","eps":1,"status":"seen","type":"movie"}
+  {"name":"Toradora","eps":26,"status":"seen","type":"anime"}
   
 ]
