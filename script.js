@@ -22,6 +22,9 @@ function readArray(array, compar, atribute){
 }
 
 function letters(array){
+
+  console.log("iniciando o botão 'por letras'");
+
   array.map(element => {
   var btn = document.getElementById(element.name[0]);
     if(!btn){
@@ -46,12 +49,14 @@ function letters(array){
 }
 
 var list;
+  console.log("iniciando fetch");
 fetch('https://raw.githubusercontent.com/MarceloH1122/uwu/main/list.json')
   .then(response => {
   return response.json().then(list => {
     
     letters(list);
     
+    console.log("iniciando o botão 'todos'");
     document.getElementById('todosanimes').innerHTML = list.map(x => {
       return x.name + ' \n';}).join("<hr>");
     
