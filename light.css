@@ -41,7 +41,7 @@ ul { /*Listas (os resultados)*/
     transition-duration: 0.1s;
     border-radius: 15%;
 }
-.pai button:hover, .botoes button:hover, .cor button:hover { /*Hover de todos os botões (principais, letras e cor tema)*/
+.pai button:hover, .letter-class button:hover, .cor button:hover { /*Hover de todos os botões (principais, letras e cor tema)*/
     background-color: #666666;
     color: #ffffff;
 }
