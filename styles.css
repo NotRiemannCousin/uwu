@@ -13,11 +13,6 @@ body {
     background-color: var(---background-color);
 }
 
-#btn-theme
-{
-    content: var(---theme-name);
-}
-
 h1 {
     /*Título*/
     color: var(---text-color);
@@ -81,7 +76,14 @@ ul {
     top: 2%;
 }
 
-.cor button {
+
+#btn-theme::after
+{
+    content: var(---theme-name);
+}
+
+#btn-theme
+{
     /*Style do botão de cor tema*/
     color: var(---text-color);
     background-color: var(---background-color);
