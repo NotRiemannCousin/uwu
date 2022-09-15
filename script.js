@@ -86,7 +86,7 @@ function changeTheme() {
   var theme_changer = document.getElementById('theme');
 
   if (theme_changer.textContent != "")
-    theme_changer = "";
+    theme_changer.textContent = "";
   else
     theme_changer.textContent = " \
       :root { \
