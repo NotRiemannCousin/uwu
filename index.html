@@ -1,75 +1,80 @@
-<html lang = "pt-br">
-    <head>
-        <meta charset = "UTF-8">
-        <link id="link" rel="stylesheet" type="text/css" href="./light.css">
-        <script src="./script.js"></script>
-        <title>titulo_generico.txt</title>
-    </head>
-  </head>
-  <body>
-    <div class="cor" id="cor"> 
-      <!--Div da cor tema-->
-      <button onclick="dark()">Dark
-      </button> 
-      <!--Botão opção "mudar de cor tema"-->
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <link id="link" rel="stylesheet" type="text/css" href="./styles.css">
+  <script src="./script.js"></script>
+  <title>titulo_generico.txt</title>
+  <style id="theme">
+  </style>
+</head>
+</head>
+
+<body>
+  <div class="cor" id="cor">
+    <!--Div da cor tema-->
+    <button onclick="changeTheme()">
+    </button>
+    <!--Botão opção "mudar de cor tema"-->
+  </div>
+  <header>
+    <h1>A N I M E S
+    </h1>
+    <!--Título-->
+  </header>
+  <div class="pai">
+    <!--Botões principais-->
+    <div>
+      <button onclick="showHide('by-letters')">Por Letra
+      </button>
     </div>
-    <header>
-      <h1>A N I M E S
-      </h1> 
-      <!--Título-->
-    </header>
-    <div class="pai"> 
-      <!--Botões principais-->
-      <div>
-        <button onclick="showHide('by-letters')">Por Letra
-        </button>
-      </div> 
-      <!--Botão opção "por letra"-->
+    <!--Botão opção "por letra"-->
+  </div>
+  <div id="by-letters">
+    <div class="botoes" id="letters">
     </div>
-    <div id="by-letters">
-      <div class="botoes" id="letters">
-      </div> 
-      <!--Onde aparece os botões de cada letras-->
-      <div class="result" id="letters-result">
-      </div> 
-      <!--Onde aparece o resultado quando clica em uma letra-->
+    <!--Onde aparece os botões de cada letras-->
+    <div class="result" id="letters-result">
     </div>
-   <br>
-    <div class="pai"> 
-      <!--Botões principais-->
-      <div>
-        <button onclick="showHide('todosanimes')" id="todos">Todos
-        </button>
-      </div> 
-      <!--Botão opção "todos"-->
+    <!--Onde aparece o resultado quando clica em uma letra-->
+  </div>
+  <br>
+  <div class="pai">
+    <!--Botões principais-->
+    <div>
+      <button onclick="showHide('todosanimes')" id="todos">Todos
+      </button>
     </div>
-    <div class="result" id="todosanimes">
-    </div> 
-    <!--Onde aparece o resultado quando clica no botão todos-->
-    <br>
-    <div class="pai"> 
-      <!--Botões principais-->
-      <div>
-        <button onclick="showHide('osanimes')" id="animes">Animes
-        </button>
-      </div> 
-      <!--Botão opção "animes"-->
+    <!--Botão opção "todos"-->
+  </div>
+  <div class="result" id="todosanimes">
+  </div>
+  <!--Onde aparece o resultado quando clica no botão todos-->
+  <br>
+  <div class="pai">
+    <!--Botões principais-->
+    <div>
+      <button onclick="showHide('osanimes')" id="animes">Animes
+      </button>
     </div>
-    <div class="result" id="osanimes">
-    </div> 
-    <!--Onde aparece o resultado quando clica no botão animes-->
-    <br>
-    <div class="pai"> 
-      <!--Botões principais-->
-      <div>
-        <button onclick="showHide('movies')" id="filmes">Filmes
-        </button>
-      </div> 
-      <!--Botão opção "filmes"-->
+    <!--Botão opção "animes"-->
+  </div>
+  <div class="result" id="osanimes">
+  </div>
+  <!--Onde aparece o resultado quando clica no botão animes-->
+  <br>
+  <div class="pai">
+    <!--Botões principais-->
+    <div>
+      <button onclick="showHide('movies')" id="filmes">Filmes
+      </button>
     </div>
-    <div class="result" id="movies">
-    </div> 
-    <!--Onde aparece o resultado quando clica no botão filmes-->
-    <br>
-  </body>
+    <!--Botão opção "filmes"-->
+  </div>
+  <div class="result" id="movies">
+  </div>
+  <!--Onde aparece o resultado quando clica no botão filmes-->
+  <br>
+</body>
+
 </html>

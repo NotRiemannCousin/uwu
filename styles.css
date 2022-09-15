@@ -1,16 +1,25 @@
 :root {
-	---accent-color: #666;
-	---accent-color-2: #fff;
-	---background-color: #252525;
-	---text-color: #f3f3f3;
+    ---accent-color: #f3f3f3;
+    ---accent-color-2: #252525;
+    ---background-color: #fff;
+    ---text-color: #666;
+    ---theme-name: 'dark';
 }
 
-body { /*Tudo*/
+body {
+    /*Tudo*/
     font-family: verdana;
     font-size: 13pt;
     background-color: var(---background-color);
 }
-h1 { /*Título*/
+
+#btn-theme
+{
+    content: var(---theme-name);
+}
+
+h1 {
+    /*Título*/
     color: var(---text-color);
     text-align: center;
     font-family: verdana;
@@ -18,16 +27,22 @@ h1 { /*Título*/
     margin-top: 30pt;
     margin-bottom: 25pt;
 }
-ul { /*Listas (os resultados)*/
+
+ul {
+    /*Listas (os resultados)*/
     list-style-type: none;
 }
-.result { /*Cor dos resultados*/
-    color: var(---text-color);
-}
-.pai button { /*Style dos botões principais*/
+
+.result {
+    /*Cor dos resultados*/
     color: var(---accent-color-2);
+}
+
+.pai button {
+    /*Style dos botões principais*/
+    color: var(---text-color);
     background-color: var(---background-color);
-    border: 2px solid var(---accent-color-2);
+    border: 2px solid var(---text-color);
     display: block;
     margin: 10px;
     font-size: 16pt;
@@ -37,10 +52,12 @@ ul { /*Listas (os resultados)*/
     transition-duration: 0.1s;
     border-radius: 15%;
 }
-.letras { /*Style dos botões das letras*/
+
+.letter-class {
+    /*Style dos botões das letras*/
     color: var(---text-color);
     background-color: var(---background-color);
-    border: 2px solid var(---accent-color-2);
+    border: 2px solid var(---text-color);
     margin: 10px;
     font-size: 14pt;
     height: 45px;
@@ -48,19 +65,27 @@ ul { /*Listas (os resultados)*/
     transition-duration: 0.1s;
     border-radius: 15%;
 }
-.pai button:hover, .letter-class button:hover, .cor button:hover { /*Hover de todos os botões (principais, letras e cor tema)*/
-    background-color: var(---accent-color-2);
+
+.pai button:hover,
+.letter-class button:hover,
+.cor button:hover {
+    /*Hover de todos os botões (principais, letras e cor tema)*/
+    background-color: var(---text-color);
     color: var(---background-color);
 }
-.cor { /*Style da div da cor tema*/
+
+.cor {
+    /*Style da div da cor tema*/
     position: fixed;
     right: 0.5%;
     top: 2%;
 }
-.cor button { /*Style do botão de cor tema*/
-    color: var(---accent-color-2);
+
+.cor button {
+    /*Style do botão de cor tema*/
+    color: var(---text-color);
     background-color: var(---background-color);
-    border: 2px solid var(---accent-color-2);
+    border: 2px solid var(---text-color);
     display: block;
     margin: 10px;
     font-size: 16pt;
