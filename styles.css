@@ -33,7 +33,7 @@ ul {
     color: var(---accent-color-2);
 }
 
-.pai button {
+main button {
     /*Style dos botões principais*/
     color: var(---text-color);
     background-color: var(---background-color);
@@ -48,7 +48,7 @@ ul {
     border-radius: 15%;
 }
 
-.letter-class {
+#por-letras {
     /*Style dos botões das letras*/
     color: var(---text-color);
     background-color: var(---background-color);
@@ -61,19 +61,10 @@ ul {
     border-radius: 15%;
 }
 
-.pai button:hover,
-.letter-class button:hover,
-.cor button:hover {
+button:hover {
     /*Hover de todos os botões (principais, letras e cor tema)*/
     background-color: var(---text-color);
     color: var(---background-color);
-}
-
-.cor {
-    /*Style da div da cor tema*/
-    position: fixed;
-    right: 0.5%;
-    top: 2%;
 }
 
 
@@ -84,6 +75,9 @@ ul {
 
 #btn-theme
 {
+    position: fixed;
+    right: 0.5%;
+    top: 2%;
     /*Style do botão de cor tema*/
     color: var(---text-color);
     background-color: var(---background-color);
