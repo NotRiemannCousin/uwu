@@ -47,7 +47,7 @@ main button {
     border-radius: 15%;
 }
 
-#by-letters {
+.by-letters {
     /*Style dos botões das letras*/
     color: var(---text-color);
     background-color: var(---background-color);
