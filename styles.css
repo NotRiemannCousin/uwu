@@ -77,7 +77,7 @@ ul {
 }
 
 
-#btn-theme::after
+#btn-theme::before
 {
     content: var(---theme-name);
 }
