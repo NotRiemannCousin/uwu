@@ -47,8 +47,7 @@ main button {
     border-radius: 15%;
 }
 
-.by-letters {
-    /*Style dos botões das letras*/
+.btn-letters {
     color: var(---text-color);
     background-color: var(---background-color);
     border: 2px solid var(---text-color);
@@ -56,12 +55,10 @@ main button {
     font-size: 14pt;
     height: 45px;
     width: 90px;
-    transition-duration: 0.1s;
     border-radius: 15%;
 }
 
 button:hover {
-    /*Hover de todos os botões (principais, letras e cor tema)*/
     background-color: var(---text-color);
     color: var(---background-color);
 }
@@ -77,7 +74,6 @@ button:hover {
     position: fixed;
     right: 0.5%;
     top: 2%;
-    /*Style do botão de cor tema*/
     color: var(---text-color);
     background-color: var(---background-color);
     border: 2px solid var(---text-color);
