@@ -74,24 +74,25 @@ fetch('https://raw.githubusercontent.com/MarceloH1122/uwu/main/list.json')
     });
   });
 
-  function showHide(id) {
-    document.getElementById('by-letters').hidden = true;
-    document.getElementById('todosanimes').hidden = true;
-    document.getElementById('osanimes').hidden = true;
-    document.getElementById('movies').hidden = true;
-  
-    document.getElementById(id).hidden = false;
-  }
-  
-  function changeTheme() {
-    if (document.getElementById('theme').textContent != "")
-      document.getElementById('theme').textContent = "";
-    else
-      document.getElementById('theme').textContent = " \
+function showHide(id) {
+  document.getElementById('by-letters').hidden = true;
+  document.getElementById('todosanimes').hidden = true;
+  document.getElementById('osanimes').hidden = true;
+  document.getElementById('movies').hidden = true;
+
+  document.getElementById(id).hidden = false;
+}
+
+function changeTheme() {
+  if (document.getElementById('theme').textContent != "")
+    document.getElementById('theme').textContent = "";
+  else
+    document.getElementById('theme').textContent = " \
       :root { \
         ---accent-color: #666; \
         ---accent-color-2: #fff; \
         ---background-color: #252525; \
         ---text-color: #f3f3f3; \
       }";
-  }
+      document.getElementById('btn-theme').focus = false;
+}
