@@ -88,7 +88,7 @@ function changeTheme() {
   if (theme_changer.textContent != "")
     theme_changer = "";
   else
-    theme_changer.textContent = " \ 
+    theme_changer.textContent = " \
       :root { \
         ---accent-color: #666; \
         ---accent-color-2: #fff; \
