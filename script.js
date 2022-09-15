@@ -93,6 +93,7 @@ function changeTheme() {
         ---accent-color-2: #fff; \
         ---background-color: #252525; \
         ---text-color: #f3f3f3; \
+        ---theme-name: 'light'; \
       }";
       document.getElementById('btn-theme').focus = false;
 }
