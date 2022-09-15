@@ -58,7 +58,6 @@ fetch('https://raw.githubusercontent.com/MarceloH1122/uwu/main/list.json')
 
       letters(list);
 
-      console.log("iniciando o botão 'todos'");
       document.getElementById('todosanimes').innerHTML = list.map(x => {
         return x.name + ' \n';
       }).join("<hr>");
