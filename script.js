@@ -83,12 +83,12 @@ function showHide(id) {
 }
 
 function changeTheme() {
-  var style_content = document.getElementById('theme').textContent;
+  var theme_changer = document.getElementById('theme');
 
-  if (style_content != "")
+  if (style_content.textContent != "")
     style_content = "";
   else
-    style_content = " \
+    style_content.textContent = " \
       :root { \
         ---accent-color: #666; \
         ---accent-color-2: #fff; \
