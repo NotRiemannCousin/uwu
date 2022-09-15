@@ -34,7 +34,7 @@ function letters(array) {
       btn.setAttribute('id', element.name[0]);
       btn.setAttribute('amount', 1);
       btn.innerHTML = element.name[0] + ' (1)';
-      btn.classList.add('letter-class');
+      btn.classList.add('btn-letters');
       btn.onclick = function () {
         document.getElementById('letters-result').innerHTML = btn.getAttribute('data-names');
       };
