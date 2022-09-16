@@ -51,7 +51,7 @@ main button {
     z-index: 1;
 }
 
-.btn-main:first-child+div {
+.btn-main:nth-child(2) {
     visibility: none;
 }
 
