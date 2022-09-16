@@ -64,12 +64,6 @@ fetch('https://raw.githubusercontent.com/MarceloH1122/uwu/main/list.json')
 
       document.getElementById('osanimes').innerHTML = readArray(list, 'anime', 'type');
       document.getElementById('movies').innerHTML = readArray(list, 'movie', 'type');
-
-
-      document.getElementById('btn-letters').hidden = true;
-      document.getElementById('todosanimes').hidden = true;
-      document.getElementById('osanimes').hidden = true;
-      document.getElementById('movies').hidden = true;
     });
   });
 
