@@ -51,8 +51,8 @@ main button {
     z-index: 1;
 }
 
-.btn-main:nth-child(2) {
-    visibility: none;
+.btn-main :nth-child(2) {
+    visibility: hidden;
 }
 
 .btn-main:focus-within :nth-child(2),
