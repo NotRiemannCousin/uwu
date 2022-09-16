@@ -40,6 +40,7 @@ function letters(array) {
       btn.innerHTML = element.name[0] + ' (' + btn.getAttribute('amount') + ')';
       btn.setAttribute('data-names', btn.getAttribute('data-names') + '<hr>' + element.name);
     }
+    document.getElementById('letters').appendChild(btn);
   });
 }
 
