@@ -22,9 +22,6 @@ function readArray(array, compar, atribute) {
 }
 
 function letters(array) {
-
-  console.log("iniciando o botão 'por letras'");
-
   array.map(element => {
     var btn = document.getElementById(element.name[0]);
     if (!btn) {
@@ -38,10 +35,6 @@ function letters(array) {
       btn.onclick = function () {
         document.getElementById('letters-result').innerHTML = btn.getAttribute('data-names');
       };
-
-      if (document.getElementById('letters').appendChild(btn)) {
-        console.log("botão " + element.name[0] + " adicionado");
-      }
     } else {
       btn.setAttribute('amount', parseInt(btn.getAttribute('amount')) + 1);
       btn.innerHTML = element.name[0] + ' (' + btn.getAttribute('amount') + ')';
@@ -51,7 +44,6 @@ function letters(array) {
 }
 
 var list;
-console.log("iniciando fetch");
 fetch('https://raw.githubusercontent.com/MarceloH1122/uwu/main/list.json')
   .then(response => {
     return response.json().then(list => {
@@ -62,14 +54,10 @@ fetch('https://raw.githubusercontent.com/MarceloH1122/uwu/main/list.json')
         return x.name + ' \n';
       }).join("<hr>");
 
-      document.getElementById('osanimes').innerHTML = readArray(list, 'anime', 'type');
-      document.getElementById('movies').innerHTML = readArray(list, 'movie', 'type');
+      document.getElementById('osanimes').innerHTML = readArray(list, false, 'is-movie');
+      document.getElementById('movies').innerHTML = readArray(list, true, 'is-movie');
     });
   });
-
-
-
-
 
 
 
