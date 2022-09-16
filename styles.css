@@ -47,7 +47,11 @@ main button {
     border-radius: 15%;
 }
 
-.btn-main+div {
+.btn-main{
+    z-index: 1;
+}
+
+.btn-main:first-child(button)+div {
     visibility: none;
 }
 
