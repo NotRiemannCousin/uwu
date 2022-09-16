@@ -52,12 +52,14 @@ main button {
 }
 
 .btn-main :nth-child(2) {
-    visibility: hidden;
+    z-index: 1;
+    height: 0;
 }
 
 .btn-main:focus-within :nth-child(2),
 .btn-main :nth-child(2):focus-within {
     visibility: visible;
+    height:fit-content;
 }
 
 .btn-letters {
