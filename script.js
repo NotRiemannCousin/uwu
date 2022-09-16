@@ -73,15 +73,6 @@ fetch('https://raw.githubusercontent.com/MarceloH1122/uwu/main/list.json')
     });
   });
 
-function showHide(id) {
-  document.getElementById('btn-letters').hidden = true;
-  document.getElementById('todosanimes').hidden = true;
-  document.getElementById('osanimes').hidden = true;
-  document.getElementById('movies').hidden = true;
-
-  document.getElementById(id).hidden = false;
-}
-
 function changeTheme() {
   var theme_changer = document.getElementById('theme');
 

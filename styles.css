@@ -47,6 +47,15 @@ main button {
     border-radius: 15%;
 }
 
+.btn-main+div {
+    visibility: none;
+}
+
+.btn-main:focus-within+div,
+.btn-main+div:focus-within {
+    visibility: visible;
+}
+
 .btn-letters {
     color: var(---text-color);
     background-color: var(---background-color);
@@ -64,13 +73,11 @@ button:hover {
 }
 
 
-#btn-theme::before
-{
+#btn-theme::before {
     content: var(---theme-name);
 }
 
-#btn-theme
-{
+#btn-theme {
     position: fixed;
     right: 0.5%;
     top: 2%;
