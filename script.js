@@ -25,7 +25,7 @@ function letters(array) {
   array.map(element => {
     var btn = document.getElementById(element.name[0]);
     if (!btn) {
-      let btn = document.createElement('button');
+      btn = document.createElement('button');
 
       btn.setAttribute('data-names', element.name);
       btn.setAttribute('id', element.name[0]);
