@@ -51,7 +51,7 @@ fetch('https://raw.githubusercontent.com/MarceloH1122/uwu/main/list.json')
       letters(list);
 
       document.getElementById('todosanimes').innerHTML = list.map(x => {
-        return x.name + ' \n';
+        return x.name;
       }).join("<hr>");
 
       document.getElementById('osanimes').innerHTML = readArray(list, 0, 'is-movie');
