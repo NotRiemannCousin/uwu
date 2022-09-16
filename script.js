@@ -12,7 +12,7 @@ function readArray(array, compar, atribute) {
     if (Object.keys(array[0])[t] == atribute) {
       array.map(element => {
         if (Object.values(element)[t] == compar) {
-          string.push(element.name);
+          string.push('<p>' + element.name + '</p>');
         }
       });
       break;
@@ -54,8 +54,8 @@ fetch('https://raw.githubusercontent.com/MarceloH1122/uwu/main/list.json')
         return x.name + ' \n';
       }).join("<hr>");
 
-      document.getElementById('osanimes').innerHTML = readArray(list, false, 'is-movie');
-      document.getElementById('movies').innerHTML = readArray(list, true, 'is-movie');
+      document.getElementById('osanimes').innerHTML = readArray(list, 0, 'is-movie');
+      document.getElementById('movies').innerHTML = readArray(list, 1, 'is-movie');
     });
   });
 
